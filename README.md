@@ -6,8 +6,8 @@
 |email|string|unique: true,null:false|
 |pass|string|null: false|
 ### Association
-- has_many  :group,through: :groups_users
-- has_many  :message
+- has_many  :groups,through: :groups_users
+- has_many  :messages
 - has_many  :groups_users
 
 #1対1、1対多、多対多どれなのか
@@ -30,10 +30,10 @@
 ## メッセージテーブル
 
 |Column|Type|Options|
-|message|string||
+|message|text||
 |img|string||
-|use|string|null:false|
-|group|string|null:false|
+|use_id|integer|null:false|
+|group_id|integer|null:false|
 ### Association
 - belongs_to :user
 - belongs_to :group
@@ -48,8 +48,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|group_id|string|foreign_key: true|
-|user_id|string|foreign_key: true|
+|group_id|string|foreign_key: true,null: false|
+|user_id|string|foreign_key: true,null: false|
 
 #インデックス、外部キー制約　optionを考える
 
