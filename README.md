@@ -32,8 +32,8 @@
 |Column|Type|Options|
 |message|text||
 |img|string||
-|use_id|integer|null:false|
-|group_id|integer|null:false|
+|use_id|integer|null:false,foreign_key: true|
+|group_id|integer|null:false,foreign_key: true|
 ### Association
 - belongs_to :user
 - belongs_to :group
@@ -48,8 +48,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|group_id|string|foreign_key: true,null: false|
-|user_id|string|foreign_key: true,null: false|
+|group_id|integer|foreign_key: true,null: false|
+|user_id|integer|foreign_key: true,null: false|
 
 #インデックス、外部キー制約　optionを考える
 
