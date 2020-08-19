@@ -1,0 +1,19 @@
+.main
+  .main__header
+    .main__header__left
+      .main__header__option
+        test
+      .main__header__member
+        Member:masa
+    .main__header__edit
+      Edit
+  .main__messages
+  .main__form
+    %form.form
+      %input.box{ :placeholder => "tayp a message", :type => "text" }
+
+      %label.syasin
+        %input.file(type="file")
+        = icon('fas', 'image')
+      %input.sousin{:type=>"submit", :value => "Send"}
+
