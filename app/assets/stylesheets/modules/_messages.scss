@@ -9,7 +9,7 @@
 .side-bar{
   height:100vh;
 
-  .side-bar__header{
+  &__header{
     background-color:#253141;
     width:300px;
     height:100px;
@@ -38,14 +38,14 @@
       }
     }
   }
-  .side-bar__groups{
+  &__groups{
     background-color:#2f3e51;
     width:300px;
     height: calc(100vh - 100px);
     color: #ffffff;
     justify-content: space-between;
 
-    .side-bar__groupsbox{
+    &box{
       padding: 20px 20px 40px 20px;
     
     
@@ -65,7 +65,7 @@
 
 
 .main{
-  .main__header{
+  &__header{
     background-color:#ffffff;
     width: calc(100vw - 300px);
     height:100px;
@@ -73,7 +73,7 @@
     display: flex;
     justify-content:space-between;
 
-    .main__header__left{
+    &__left{
       padding: 35px 0px 15px 40px;
 
       .main__header__option{
@@ -86,7 +86,7 @@
         padding-top: 15px;
       }
     }
-    .main__header__edit{
+    &__edit{
       font-size: 16px;
       color: #38aef0;
       border: 1px solid #38aef0;
@@ -94,12 +94,12 @@
       margin: 28px 40px 30px 40px;
     }
   }
-  .main__messages{
+  &__messages{
     background-color:#fafafa;
     width: calc(100vw - 300px);
     height:calc(100vh - 190px);
   }
-  .main__form{
+  &__form{
     background-color:#d2d2d2;
     width: calc(100vw - 300px);
     height:90px;
