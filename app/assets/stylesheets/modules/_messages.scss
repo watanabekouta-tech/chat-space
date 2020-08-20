@@ -100,7 +100,7 @@
     height:calc(100vh - 190px);
   }
   .main__form{
-    background-color:#443838;
+    background-color:#d2d2d2;
     width: calc(100vw - 300px);
     height:90px;
     padding-bottom: 0px;
@@ -121,8 +121,7 @@
           line-height: 50px;
           font-size: 25px;
           position: absolute;
-          left: 800px;
-        
+          right: 140px;
         .file{
           display:none;
         }
