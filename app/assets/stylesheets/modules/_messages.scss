@@ -101,13 +101,19 @@
       border: 1px solid #38aef0;
       padding:  8px 20px;
       margin: 28px 40px 30px 40px;
+      a{
+        color: #38aef0;
+        text-decoration:none ;
+      }
     }
   }
+
   &__messages{
     background-color:#fafafa;
     width: calc(100vw - 300px);
     height:calc(100vh - 190px);
   }
+
   &__form{
     background-color:#d2d2d2;
     width: calc(100vw - 300px);
@@ -117,31 +123,53 @@
     .form{
         padding-top: 30px ;
         padding-left: 20px;
-
-      .box{
-        width:  calc(100% - 130px);
-        height: 50px;
-        size: 10px;
-        position: relative;
-        padding-left: 20px;
-        border: none;
-      }
-      .syasin{
-          line-height: 50px;
-          font-size: 25px;
-          position: absolute;
-          right: 140px;
-        .file{
-          display:none;
-        }
+        display: flex;
+      .form__contents{
+          .box{
+            width: 440px;
+            height: 50px;
+            size: 10px;
+            position: relative;
+            padding-left: 20px;
+            border: none;
+          }
+          .label__wagomu{
+            .syasin{
+              line-height: 50px;
+              font-size: 25px;
+              position: absolute;
+              right: 140px;
+            }
+            .file{
+              display:none;
+            }
+          }
       }
       .sousin{
-        background-color: #38aef0;
-        border: none;
-        color: #ffffff;
-        height: 50px;
-        width: 90px;
+            background-color: #38aef0;
+            border: none;
+            color: #ffffff;
+            height: 50px;
+            width: 90px;
+            margin-left: 20px;
       }
     }
   }
 }
+
+
+.MessageBox{
+  margin: 40px 20px ;
+  .MessageInfo{display: flex;}
+  .MessageInfo__userName{}
+  
+    .MessageInfo__date{
+      color: #999999;
+      font-size: 1px;
+    }
+    .Message{
+    }
+    .Message__content{}
+    .Message__image {}
+    
+  } 
