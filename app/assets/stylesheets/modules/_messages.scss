@@ -48,6 +48,7 @@
     height: calc(100vh - 100px);
     color: #ffffff;
     justify-content: space-between;
+    overflow:scroll;
 
     &box{
       padding: 20px 20px 40px 20px;
@@ -112,6 +113,7 @@
     background-color:#fafafa;
     width: calc(100vw - 300px);
     height:calc(100vh - 190px);
+    overflow: scroll;
   }
 
   &__form{
