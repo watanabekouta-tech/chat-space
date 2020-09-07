@@ -56,6 +56,7 @@ $(function(){
       let html = buildHTML(data);
       $('.main__messages').append(html);
       $('form')[0].reset();
+      $('.main__messages').animate({ scrollTop: $('.main__messages')[0].scrollHeight});
     })
     .always(function(data){
       $('.sousin').prop('disabled', false);
